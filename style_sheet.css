@@ -1,0 +1,40 @@
+
+/* Navigation bar and referance links*/
+.navBar{
+  background-color: #e6e6e6;
+  font-size: 30px;
+  font-family: 'Courier', Courier, monospace;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* standard format for links accross cite*/
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.main-body{
+  background-color: #afcccc;
+  margin: 10px;
+}
+
+.body{
+  font-family: 'Courier', Courier, monospace;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin: 10px;
+}
