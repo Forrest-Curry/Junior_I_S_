@@ -4,7 +4,7 @@
     <title>CPU Learning Tool</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style_sheet.css">
-    <script type="moduel" scr="./js_script.js"></script>
+    <script src="js_script.js"></script>
 </head>
 
 <body class="main-body"></body>
@@ -16,9 +16,29 @@
 </div>
 
 <div class="body">
+    <p class="text">objects to select from</p>
+    <div class="scroll-option">
+        
+        <div id="start1" class="start" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="drag1" class="move-image" src="blue.png" alt="color blue" draggable="true" ondragstart="drag(event)">
+        </div>
 
+        <div id="start2" class="start" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="drag2" class="move-image" src="purple.jpeg" alt="color green" draggable="true" ondragstart="drag(event)">
+        </div>
 
-<p>Some text on the <b>GAME</b> screen</p>
+        <div id="start3" class="start" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="drag3" class="move-image" src="green.png" alt="color purple" draggable="true" ondragstart="drag(event)">
+        </div>
+
+    </div>
+    <br>
+    <p class="text">CPU board</p>
+    <div class="game-board">
+        
+        <div id="drop1" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
 
 
 </div>
