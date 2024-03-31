@@ -15,7 +15,7 @@
     <a href="file:///Users/forrest/Desktop/Junior_I_S_/game.html" class="bar-button">Game</a>
 </div>
 
-<div class="body">
+<div id="body" class="body">
     <p class="text">objects to select from</p>
     <div class="scroll-option">
         
@@ -38,8 +38,18 @@
         
         <div id="drop1" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-    </div>
+        <div id="drop2" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
+        <div id="drop3" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <div id="drop4" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+    
+    <br>
+
+    <button onClick="reset()"> reset</button>
+    <button onClick="checkCorrect()"> Check awnsers</button>
 
 </div>
 </body>
