@@ -1,4 +1,3 @@
-//drag and drop functions from w3schools.com
 function allowDrop(ev) {
   ev.preventDefault();
   }
@@ -11,7 +10,12 @@ function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   if (ev.target instanceof HTMLDivElement){
-    ev.target.appendChild(document.getElementById(data));
+    if (ev.target.firstChild == null){
+      ev.target.appendChild(document.getElementById(data));
+    }
+    else{
+      return;
+    }
   }
   else{
     return;
