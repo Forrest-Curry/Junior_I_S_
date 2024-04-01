@@ -1,6 +1,6 @@
 function allowDrop(ev) {
   ev.preventDefault();
-  }
+}
 
 function drag(ev) {
   ev.dataTransfer.setData("text", ev.target.id);
@@ -10,15 +10,17 @@ function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   if (ev.target instanceof HTMLDivElement){
+    console.log("Div element");
     if (ev.target.firstChild == null){
+      console.log("no child");
       ev.target.appendChild(document.getElementById(data));
     }
     else{
-      return;
+      console.log("has child");
     }
   }
   else{
-    return;
+    console.log("not DIV");
   }
 }
 
