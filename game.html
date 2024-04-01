@@ -35,24 +35,25 @@
         </div>
         <br>
 
-        <p class="text">CPU board</p>
-        <!-- Div containing the gmae board for pieces to be placed on -->
-        <div class="game-board">
-            <p class="test">blue</p>
-            <div id="drop1" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <p class="test">purple</p>
-            <div id="drop2" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <p class="test">green</p>
-            <div id="drop3" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <p class="test">none</p>
-            <div id="drop4" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-        </div>
-        
-        <br>
+        <p class="text">CPU board</p> 
         <!-- Buttons for reseting board and checking answers -->
         <button onClick="reset()">Reset</button>
         <button onClick="checkCorrect()">Check answers</button>
+
+        <!-- Div containing the gmae board for pieces to be placed on -->
+        <div class="game-board">
+            <!--<img class="board-img" src="colored-squares.png" alt="board outline">-->
+
+            <div id="drop1" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div id="drop2" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div id="drop3" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        
+            <div id="drop4" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        
+        <br>        
 
     </div>
 </body>

@@ -66,12 +66,18 @@ p.text{
 .game-board{
   margin: 5px;
   padding: 5px;
-  overflow: auto
+  height: 600px;
+  width: 600px;
+  position: relative;
+  overflow: auto;
+  background-image: url(colored-squares.png);
+  background-size: cover;
 }
 
 .move-image{
   width: 100px;
   height: 100px;
+  opacity: 100%;
 }
 
 .start{
@@ -88,12 +94,38 @@ p.text{
 
 .droped{
   background-color: #e6e6e6;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   padding: 5px;
   margin: 5px;
-  float: left;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#drop1{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+#drop2{
+  position: absolute;
+  top: 40px;
+  left: 195px;
+  height: 200px;
+  width: 200px;
+}
+
+#drop3{
+  position: absolute;
+  top: 321px;
+  left: 320px;
+}
+
+#drop4{
+  position: absolute;
+  top: 474px;
+  left: 343px;
+  width: 200px;
 }
