@@ -21,12 +21,6 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
-  color: purple;
-  background-color: transparent;
-  text-decoration: none;
-}
-
 body{
   background-color: #afcccc;
   margin: 10px;
@@ -38,6 +32,15 @@ body{
   font-family: 'Courier', Courier, monospace;
   background-color: whitesmoke;
   padding: 20px;
+  margin: 10px;
+}
+
+.bodyHome{
+  font-family: 'Courier', Courier, monospace;
+  background-color: whitesmoke;
+  padding: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin: 10px;
 }
 
