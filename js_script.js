@@ -45,8 +45,11 @@ function checkCorrect(){
   var drop3 = document.getElementById("drop3");
   var drop4 = document.getElementById("drop4");
   var drop5 = document.getElementById("drop5");
-  if (drop1.querySelector("#drag1") != null && drop2.querySelector("#drag2") != null
-        && drop3.querySelector("#drag3") != null){
+  if (drop1.querySelector("#drag1") != null 
+      && drop2.querySelector("#drag2") != null
+      && drop3.querySelector("#drag3") != null 
+      && drop4.querySelector("#drag4") != null 
+      && drop5.querySelector("#drag5") != null){
     window.alert("Good job you got everything in the correct place!");
   }
   else{
