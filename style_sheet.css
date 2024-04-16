@@ -1,0 +1,134 @@
+
+/* Navigation bar and referance links*/
+.navBar{
+  background-color: #e6e6e6;
+  font-size: 30px;
+  font-family: 'Courier', Courier, monospace;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* standard format for links accross cite*/
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+body{
+  background-color: #afcccc;
+  margin: 10px;
+  height: 99%;
+  width: 99%;
+}
+
+.body{
+  font-family: 'Courier', Courier, monospace;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin: 10px;
+}
+
+.bodyHome{
+  font-family: 'Courier', Courier, monospace;
+  background-color: whitesmoke;
+  padding: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+
+p.test{
+  float: left;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+p.text{
+  align-content: center;
+  margin: 2px;
+  padding: 2px;
+  float: none;
+}
+
+.scroll-option{
+  margin: 5px;
+  padding: 5px;
+  overflow: auto;
+}
+
+.game-board{
+  margin: 5px;
+  padding: 5px;
+  height: 600px;
+  width: 600px;
+  position: relative;
+  overflow: auto;
+  background-image: url(colored-squares.png);
+  background-size: cover;
+}
+
+.move-image{
+  width: 150px;
+  height: 150px;
+  opacity: 100%;
+}
+
+.start{
+  background-color: #e6e6e6;
+  width: 155px;
+  height: 155px;
+  padding: 5px;
+  margin: 5px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.droped{
+  background-color: #e6e6e6;
+  width: 155px;
+  height: 155px;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#drop1{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+#drop2{
+  position: absolute;
+  top: 40px;
+  left: 195px;
+  height: 200px;
+  width: 200px;
+}
+
+#drop3{
+  position: absolute;
+  top: 321px;
+  left: 320px;
+}
+
+#drop4{
+  position: absolute;
+  top: 474px;
+  left: 343px;
+  width: 200px;
+}

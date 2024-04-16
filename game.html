@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CPU Learning Tool</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_sheet.css">
+    <script src="js_script.js"></script>
+</head>
+
+<body>
+    <!-- Nav Bar is same between pages-->
+    <div class="navBar">
+        <!--These two reference should be ajusted to correspond to local file structre-->
+        <a href="file:///Users/forrest/Desktop/Junior_I_S_/home.html" class="bar-button">Home</a>
+        &emsp;
+        <a href="file:///Users/forrest/Desktop/Junior_I_S_/game.html" class="bar-button">Game</a>
+    </div>
+    <!-- This Div fuctions as the actual body of the page-->
+    <div id="body" class="body">
+        <p class="text">Objects to select from</p>
+        <!-- Div containing the inital location of componants-->
+        <div class="scroll-option">
+            
+            <div id="start1" class="start" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag1" class="move-image" src="ControlUnit.jpeg" alt="Control Unit" draggable="true" ondragstart="drag(event)">
+            </div>
+
+            <div id="start2" class="start" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag2" class="move-image" src="ALU.jpeg" alt="Arithmetic Logic Unit" draggable="true" ondragstart="drag(event)">
+            </div>
+
+            <div id="start3" class="start" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag3" class="move-image" src="Registers.jpeg" alt="Registers" draggable="true" ondragstart="drag(event)">
+            </div>
+
+            <div id="start4" class="start" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag4" class="move-image" src="InstrPointer.jpeg" alt="Instruction Pointer" draggable="true" ondragstart="drag(event)">
+            </div>
+
+            <div id="start5" class="start" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="drag5" class="move-image" src="InstrRegister.jpeg" alt="Instruction Register" draggable="true" ondragstart="drag(event)">
+            </div>
+
+        </div>
+        <br>
+
+        <p class="text">CPU board</p> 
+        <!-- Buttons for reseting board and checking answers -->
+        <button onClick="reset()">Reset</button>
+        <button onClick="checkCorrect()">Check answers</button>
+
+        <!-- Div containing the gmae board for pieces to be placed on -->
+        <div class="game-board">
+            <!--<img class="board-img" src="colored-squares.png" alt="board outline">-->
+
+            <div id="drop1" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div id="drop2" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div id="drop3" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        
+            <div id="drop4" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div id="drop5" class="droped" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </div>
+        
+        <br>        
+
+    </div>
+</body>
+
+<footer class="footer">
+
+</footer>
+
+</html>
