@@ -1,4 +1,5 @@
 
+/* GENERAL FROMAT */
 /* Navigation bar and referance links*/
 .navBar{
   background-color: #e6e6e6;
@@ -21,6 +22,7 @@ a:visited {
   text-decoration: none;
 }
 
+/* General color and format */
 body{
   background-color: #afcccc;
   margin: 10px;
@@ -35,37 +37,74 @@ body{
   margin: 10px;
 }
 
-.bodyHome{
-  font-family: 'Courier', Courier, monospace;
-  background-color: whitesmoke;
-  padding: 70px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 10px;
-}
-
-p.test{
-  float: left;
-}
-
+/* Standard div structure */
 div {
   display: block;
   unicode-bidi: isolate;
 }
 
+/* HOME PAGE FORMAT */
+/* Specific padding assicated with home page */
+.bodyHome{
+  font-family: 'Courier', Courier, monospace;
+  background-color: whitesmoke;
+  padding: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+
+
+/* GAME PAGE FORMAT */
+/* Text on game page */
 p.text{
   align-content: center;
-  margin: 2px;
-  padding: 2px;
+  background-color: #e6e6e6 ;
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-inline: auto;
   float: none;
+  width: 80%;
 }
 
-.scroll-option{
-  margin: 5px;
+/* formating for div containing buttons */
+div.buttons{
+  margin-inline: auto;
+  height: fit-content;
+  width: fit-content;
   padding: 5px;
-  overflow: auto;
 }
 
+/* formating for buttons */
+.button{
+  background-color: #acacac;
+  border: none;
+  color: black;
+  font-family: 'Courier', Courier, monospace;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  transition-duration: 0.5s;
+}
+
+/* color chage of button on hover */
+.button:hover{
+  background-color: #555555;
+  color: white;
+}
+
+/* Div structre for start location of game pieces */
+.start-location{
+  padding: 5px;
+  margin-inline: auto;
+  height: 125px;
+  width: fit-content;
+}
+
+/* div structre for game board */
 .game-board{
   margin: 5px;
   padding: 5px;
@@ -75,14 +114,17 @@ p.text{
   overflow: auto;
   background-image: url(blankCPU.jpeg);
   background-size: cover;
+  margin-inline: auto;
 }
 
+/* size for movable pieces */
 .move-image{
   width: 100px;
   height: 100px;
   opacity: 100%;
 }
 
+/* configuration for starting locations of the game pieces */
 .start{
   background-color: #e6e6e6;
   width: 105px;
@@ -95,7 +137,7 @@ p.text{
   justify-content: center;
 }
 
-/* Formating for droop locations and sizes */
+/* general formating for droop locations and sizes */
 .droped{
   background-color: #e6e6e6;
   width: 105px;
@@ -107,7 +149,7 @@ p.text{
   justify-content: center;
 }
 
-/* Fixed locations for all dropable squares */
+/* Fixed locations for all dropable squares on the board*/
 #drop1{
   position: absolute;
   top: 432px;

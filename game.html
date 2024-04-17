@@ -15,13 +15,25 @@
         &emsp;
         <a href="file:///Users/forrest/Desktop/Junior_I_S_/game.html" class="bar-button">Game</a>
     </div>
-    <!-- This Div fuctions as the actual body of the page-->
+    <!-- This Div fuctions has the actual body of the page-->
     <div id="body" class="body">
-        <p class="text">Objects to select from</p>
+        <p class="text">Now that you have a basic understanding of aspects of a CPU see if you can 
+            figure out where the different elements go on the abstract diagram.
+            Once all piece have been placed check your awnsers, to try agin press reset to move all 
+            pieces back to their start locations.
+        </p>
+        <!-- Buttons for reseting board and checking answers -->
+        <div class="buttons">
+            <button class="button" onClick="reset()">Reset</button>
+            <button class="button" onClick="checkCorrect()">Check answers</button>
+        </div>
+
         <!-- Div containing the inital location of componants-->
-        <div class="scroll-option">
+        <div class="start-location">
             
+            <!-- all calss="start" are the initial conatiners for the game pieces -->
             <div id="start1" class="start" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- all movable game pieces are dragable images -->
                 <img id="drag1" class="move-image" src="ControlUnit.jpeg" alt="Control Unit" draggable="true" ondragstart="drag(event)">
             </div>
 
@@ -42,11 +54,6 @@
             </div>
 
         </div>
-
-        <p class="text">CPU board</p> 
-        <!-- Buttons for reseting board and checking answers -->
-        <button onClick="reset()">Reset</button>
-        <button onClick="checkCorrect()">Check answers</button>
 
         <!-- Div containing the gmae board for pieces to be placed on -->
         <div class="game-board">

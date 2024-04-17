@@ -1,3 +1,8 @@
+// Functions, allowDrop(ev), drag(ev), drop(ev) are slightly modifyed versions from:
+// www.w3schools.com/html/html5_draganddrop.asp 
+// The allowDrop, and drag funtions remain the same and the drop function is 
+// Modified to handel multimple items and prevent overlap or dissapering items
+
 function allowDrop(ev) {
   ev.preventDefault();
 }
@@ -9,21 +14,17 @@ function drag(ev) {
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
+  //Changes to origal function to prevent multiple items in the same drop location
+  //and to keep images from attemting to drop on other immages and dissapering
   if (ev.target instanceof HTMLDivElement){
-    console.log("Div element");
     if (ev.target.firstChild == null){
-      console.log("no child");
       ev.target.appendChild(document.getElementById(data));
     }
-    else{
-      console.log("has child");
-    }
-  }
-  else{
-    console.log("not DIV");
   }
 }
 
+// function for reseting the location of game pieces, manualy reasigns 
+// the immages back to their start locations
 function reset(){
   var drop1 = document.getElementById("start1");
   drop1.appendChild(document.getElementById("drag1"));
@@ -36,9 +37,10 @@ function reset(){
   var drop5 = document.getElementById("start5");
   drop5.appendChild(document.getElementById("drag5"));
 
-
 }
 
+// Varifys if the game pieces have been placed in the correct locations
+// does so by matching the dragable immages to the corresponding drop locations 
 function checkCorrect(){
   var drop1 = document.getElementById("drop1");
   var drop2 = document.getElementById("drop2");
