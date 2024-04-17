@@ -14,7 +14,7 @@ function drag(ev) {
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
-  //Changes to origal function to prevent multiple items in the same drop location
+  //Changes to original function to prevent multiple items in the same drop location
   //and to keep images from attemting to drop on other immages and dissapering
   if (ev.target instanceof HTMLDivElement){
     if (ev.target.firstChild == null){
