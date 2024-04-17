@@ -1,7 +1,7 @@
-// Functions, allowDrop(ev), drag(ev), drop(ev) are slightly modifyed versions from:
+// Functions, allowDrop(ev), drag(ev), drop(ev) are slightly modified versions from:
 // www.w3schools.com/html/html5_draganddrop.asp 
-// The allowDrop, and drag funtions remain the same and the drop function is 
-// Modified to handel multimple items and prevent overlap or dissapering items
+// The allowDrop, and drag functions remain the same and the drop function is 
+// Modified to handle multiple items and prevent overlap or disappearing items
 
 function allowDrop(ev) {
   ev.preventDefault();
@@ -14,8 +14,8 @@ function drag(ev) {
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
-  //Changes to original function to prevent multiple items in the same drop location
-  //and to keep images from attemting to drop on other immages and dissapering
+  //Changes the original function to prevent multiple items in the same drop location
+  //and to keep images from attempting to drop on other images and disappearing
   if (ev.target instanceof HTMLDivElement){
     if (ev.target.firstChild == null){
       ev.target.appendChild(document.getElementById(data));
@@ -23,8 +23,8 @@ function drop(ev) {
   }
 }
 
-// function for reseting the location of game pieces, manualy reasigns 
-// the immages back to their start locations
+// This function is for resetting the location of game pieces by manually 
+// reasigning the images back to their start locations
 function reset(){
   var drop1 = document.getElementById("start1");
   drop1.appendChild(document.getElementById("drag1"));
@@ -39,8 +39,8 @@ function reset(){
 
 }
 
-// Varifys if the game pieces have been placed in the correct locations
-// does so by matching the dragable immages to the corresponding drop locations 
+// This verifies if the game pieces have been placed in the correct locations
+// and does so by matching the draggable images to the corresponding drop locations 
 function checkCorrect(){
   var drop1 = document.getElementById("drop1");
   var drop2 = document.getElementById("drop2");
