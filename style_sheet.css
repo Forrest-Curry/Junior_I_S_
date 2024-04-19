@@ -1,6 +1,6 @@
 
-/* GENERAL FROMAT */
-/* Navigation bar and referance links*/
+/* GENERAL FORMAT */
+/* Navigation bar and reference links*/
 .navBar{
   background-color: #e6e6e6;
   font-size: 30px;
@@ -9,7 +9,7 @@
   margin: 10px;
 }
 
-/* standard format for links accross cite*/
+/* standard format for links across cite*/
 a:link {
   color: black;
   background-color: transparent;
@@ -44,7 +44,7 @@ div {
 }
 
 /* HOME PAGE FORMAT */
-/* Specific padding assicated with home page */
+/* Specific padding associated with home page */
 .bodyHome{
   font-family: 'Courier', Courier, monospace;
   background-color: whitesmoke;
@@ -68,7 +68,7 @@ p.text{
   width: 80%;
 }
 
-/* formating for div containing buttons */
+/* formatting for div containing buttons */
 div.buttons{
   margin-inline: auto;
   height: fit-content;
@@ -76,7 +76,7 @@ div.buttons{
   padding: 5px;
 }
 
-/* formating for buttons */
+/* formatting for buttons */
 .button{
   background-color: #acacac;
   border: none;
@@ -90,13 +90,13 @@ div.buttons{
   transition-duration: 0.5s;
 }
 
-/* color chage of button on hover */
+/* color change of button on hover */
 .button:hover{
   background-color: #555555;
   color: white;
 }
 
-/* Div structre for start location of game pieces */
+/* div structure for start location of game pieces */
 .start-location{
   padding: 5px;
   margin-inline: auto;
@@ -104,7 +104,7 @@ div.buttons{
   width: fit-content;
 }
 
-/* div structre for game board */
+/* div structure for game board */
 .game-board{
   margin: 5px;
   padding: 5px;
@@ -137,7 +137,7 @@ div.buttons{
   justify-content: center;
 }
 
-/* general formating for droop locations and sizes */
+/* general formatting for droop locations and sizes */
 .droped{
   background-color: #e6e6e6;
   width: 105px;
@@ -149,7 +149,7 @@ div.buttons{
   justify-content: center;
 }
 
-/* Fixed locations for all dropable squares on the board*/
+/* locations for all dropable squares are fixed on the board*/
 #drop1{
   position: absolute;
   top: 432px;
